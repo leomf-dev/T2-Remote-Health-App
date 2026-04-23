@@ -6,8 +6,27 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		B5D221792F9AB86500F2DEFE /* MedicalRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D221782F9AB84400F2DEFE /* MedicalRepository.swift */; };
+		B5D2217A2F9AB86900F2DEFE /* MedicalControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D221772F9AB82500F2DEFE /* MedicalControl.swift */; };
+		B5D2217C2F9AB89C00F2DEFE /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D2217B2F9AB89400F2DEFE /* CoreDataManager.swift */; };
+		B5D2217E2F9AB8C400F2DEFE /* MedicalControlCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D2217D2F9AB8BF00F2DEFE /* MedicalControlCell.swift */; };
+		B5D221802F9AB8D000F2DEFE /* MedicalListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D2217F2F9AB8CC00F2DEFE /* MedicalListViewController.swift */; };
+		B5D221832F9AB97000F2DEFE /* MedicalApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B5D221812F9AB97000F2DEFE /* MedicalApp.xcdatamodeld */; };
+		B5D221852F9ABB2200F2DEFE /* MedicalFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D221842F9ABB2200F2DEFE /* MedicalFormViewController.swift */; };
+		B5D221872F9ABE1B00F2DEFE /* MedicalDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D221862F9ABE1B00F2DEFE /* MedicalDetailViewController.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		B5D221562F9AB3E200F2DEFE /* T2-Remote-Health-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "T2-Remote-Health-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5D221772F9AB82500F2DEFE /* MedicalControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicalControl.swift; sourceTree = "<group>"; };
+		B5D221782F9AB84400F2DEFE /* MedicalRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicalRepository.swift; sourceTree = "<group>"; };
+		B5D2217B2F9AB89400F2DEFE /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		B5D2217D2F9AB8BF00F2DEFE /* MedicalControlCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicalControlCell.swift; sourceTree = "<group>"; };
+		B5D2217F2F9AB8CC00F2DEFE /* MedicalListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicalListViewController.swift; sourceTree = "<group>"; };
+		B5D221822F9AB97000F2DEFE /* MedicalApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MedicalApp.xcdatamodel; sourceTree = "<group>"; };
+		B5D221842F9ABB2200F2DEFE /* MedicalFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicalFormViewController.swift; sourceTree = "<group>"; };
+		B5D221862F9ABE1B00F2DEFE /* MedicalDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicalDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -45,6 +64,11 @@
 		B5D2214D2F9AB3E200F2DEFE = {
 			isa = PBXGroup;
 			children = (
+				B5D221762F9AB80400F2DEFE /* Repositories */,
+				B5D221752F9AB7FB00F2DEFE /* Persistences */,
+				B5D221742F9AB65400F2DEFE /* Views */,
+				B5D221722F9AB61C00F2DEFE /* ViewControllers */,
+				B5D221712F9AB61500F2DEFE /* Models */,
 				B5D221582F9AB3E200F2DEFE /* T2-Remote-Health-App */,
 				B5D221572F9AB3E200F2DEFE /* Products */,
 			);
@@ -56,6 +80,49 @@
 				B5D221562F9AB3E200F2DEFE /* T2-Remote-Health-App.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		B5D221712F9AB61500F2DEFE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B5D221772F9AB82500F2DEFE /* MedicalControl.swift */,
+				B5D221812F9AB97000F2DEFE /* MedicalApp.xcdatamodeld */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B5D221722F9AB61C00F2DEFE /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B5D221862F9ABE1B00F2DEFE /* MedicalDetailViewController.swift */,
+				B5D221842F9ABB2200F2DEFE /* MedicalFormViewController.swift */,
+				B5D2217F2F9AB8CC00F2DEFE /* MedicalListViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B5D221742F9AB65400F2DEFE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B5D2217D2F9AB8BF00F2DEFE /* MedicalControlCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B5D221752F9AB7FB00F2DEFE /* Persistences */ = {
+			isa = PBXGroup;
+			children = (
+				B5D2217B2F9AB89400F2DEFE /* CoreDataManager.swift */,
+			);
+			path = Persistences;
+			sourceTree = "<group>";
+		};
+		B5D221762F9AB80400F2DEFE /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				B5D221782F9AB84400F2DEFE /* MedicalRepository.swift */,
+			);
+			path = Repositories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,6 +199,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5D221832F9AB97000F2DEFE /* MedicalApp.xcdatamodeld in Sources */,
+				B5D221872F9ABE1B00F2DEFE /* MedicalDetailViewController.swift in Sources */,
+				B5D221852F9ABB2200F2DEFE /* MedicalFormViewController.swift in Sources */,
+				B5D2217E2F9AB8C400F2DEFE /* MedicalControlCell.swift in Sources */,
+				B5D2217A2F9AB86900F2DEFE /* MedicalControl.swift in Sources */,
+				B5D2217C2F9AB89C00F2DEFE /* CoreDataManager.swift in Sources */,
+				B5D221802F9AB8D000F2DEFE /* MedicalListViewController.swift in Sources */,
+				B5D221792F9AB86500F2DEFE /* MedicalRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,7 +224,7 @@
 				INFOPLIST_FILE = "T2-Remote-Health-App/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -180,7 +255,7 @@
 				INFOPLIST_FILE = "T2-Remote-Health-App/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -341,6 +416,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B5D221812F9AB97000F2DEFE /* MedicalApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B5D221822F9AB97000F2DEFE /* MedicalApp.xcdatamodel */,
+			);
+			currentVersion = B5D221822F9AB97000F2DEFE /* MedicalApp.xcdatamodel */;
+			path = MedicalApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = B5D2214E2F9AB3E200F2DEFE /* Project object */;
 }
